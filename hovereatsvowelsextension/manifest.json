@@ -1,0 +1,29 @@
+{
+    // Required
+    "manifest_version": 2,
+    "name": "Hover Eats Vowels",
+    "version": "1.0.0",
+
+    "browser_action": {},
+    // browser_action": {"default_popup": "popup.html"},
+    
+
+// commenting it out because now doing the permissons active tab
+//     "content_scripts": [
+// {
+
+//     "matches": ["<all_urls>"],
+//     "js":["content.js"],
+//     "css":["content.css"]
+
+// }
+//     ],
+
+    "permissions": [
+        "activeTab"],
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      }
+}
