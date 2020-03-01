@@ -7,7 +7,7 @@ console.log('Be sure to read the README file to get this extension working');
 // variable below will already be present
 
 var port = 3201;
-var socket = io.connect('http://68.192.19.177:' + port);
+var socket = io.connect('http://159.203.70.158:' + port);
 
 socket.on('connect', function() {
   console.log('io connected successfully');
