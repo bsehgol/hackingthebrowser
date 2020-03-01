@@ -1,5 +1,5 @@
 
-Learn more or give us feedback
+//Learn more or give us feedback
 console.log('socket server content script version 2');
 console.log('Be sure to read the README file to get this extension working');
 
