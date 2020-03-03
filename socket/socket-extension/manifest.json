@@ -2,6 +2,16 @@
   "manifest_version": 2,
   "name": "Socket Extension Example",
   "version": "0.1",
+  "page_action": {
+    "default_title": "Chat Away",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
   "content_scripts": [
     {
       "matches": [
@@ -9,7 +19,8 @@
       ],
       "js": ["socket.io-1.4.5.js","content.js"]
     }
+  ],
+  "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'"
 
-  ]
 }
 
