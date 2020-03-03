@@ -27,10 +27,12 @@ console.log('Be sure to read the README file to get this extension working');
 
     // append the chat text message
     socket.on('message', function(msg){
-      console.log(msg)
+      console.log(`${msg} is the message`)
         // $('#messages').append($('<li>').html(msg));
         // document.getElementById("messages").appendChild(document.createElement("li").html(msg))
         // document.getElementById("messages").appendChild('li').html(msg)
+        // $('#messages').append($('<li>').text(msg));
+
 
     });
     // append text if someone is online
@@ -38,7 +40,6 @@ console.log('Be sure to read the README file to get this extension working');
       console.log(`${username} is online`)
         // $('#messages').append($('<li>').html(username));
         // document.getElementById("messages").appendChild('li').html(username)
-
     });
     // ask username
     var username = prompt('Please tell me your name');

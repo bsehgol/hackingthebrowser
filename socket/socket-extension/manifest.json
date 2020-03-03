@@ -4,7 +4,7 @@
   "version": "0.1",
   "page_action": {
     "default_title": "Chat Away",
-    "default_popup": "index.html"
+    "default_popup": "popup.html"
   },
   "permissions": [
     "tabs"
