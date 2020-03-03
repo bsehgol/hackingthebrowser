@@ -1,4 +1,4 @@
-
+console.log("popupjs is called")
     var port = 3201;
     var socket = io.connect('159.203.70.158:' + port);
 io.on('connection', function (socket) {
